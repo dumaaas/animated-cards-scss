@@ -75,10 +75,10 @@ body {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: opacity 150ms linear, -webkit-transform 250m ease;
-  transition: opacity 150ms linear, -webkit-transform 250m ease;
-  transition: transform 250m ease, opacity 150ms linear;
-  transition: transform 250m ease, opacity 150ms linear, -webkit-transform 250m ease;
+  -webkit-transition: opacity 250ms linear, -webkit-transform 400ms ease;
+  transition: opacity 250ms linear, -webkit-transform 400ms ease;
+  transition: transform 400ms ease, opacity 250ms linear;
+  transition: transform 400ms ease, opacity 250ms linear, -webkit-transform 400ms ease;
 }
 
 .cards .first .rank {
