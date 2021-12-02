@@ -211,11 +211,51 @@ body {
   font-size: .9rem;
 }
 
+.cards .first .back .streamers-info .icon {
+  width: 2em;
+  height: 2em;
+  margin: 0 auto;
+}
+
 .cards .first .back .streamers-info .icon img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.cards .first .back .streamers-info .icon i {
+  min-width: 100%;
+  min-height: 100%;
+  display: none;
+  font-size: .6rem;
+}
+
+.cards .first .back .streamers-info .icon i:hover {
+  -webkit-animation: bounce 250ms;
+          animation: bounce 250ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.cards .first .back .streamers-info .icon:hover img {
+  display: none;
+}
+
+.cards .first .back .streamers-info .icon:hover i {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 2em;
   height: 2em;
   border-radius: 50%;
-  border: 2px solid var(--clr-dark);
+  background-color: var(--clr-accent-dark);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cards .first .back .streamers-info .name {
@@ -340,6 +380,28 @@ body {
   100% {
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 80% 96%, 53% 91%, 21% 84%, 0 100%, 0% 35%, 0 1%);
             clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 80% 96%, 53% 91%, 21% 84%, 0 100%, 0% 35%, 0 1%);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
   }
 }
 /*# sourceMappingURL=main.css.map */
